@@ -6,13 +6,13 @@ def add(*args):
     return sum
 
 def subtract(*args):
-    difference = 0
-    for each in args:
-        difference -= each
+    difference = args[0]
+    for each in args[1:]:
+        difference = difference - each
     return difference
 
 def multiply(*args):
-    multiply = 0
+    multiply = 1
     for each in args:
         multiply *= each
     return multiply
